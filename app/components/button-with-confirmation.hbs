@@ -4,6 +4,8 @@
 
 {{#if this.isConfirming}}
   <div class="confirm-dialog">
+    {{yield this.confirmValue}}
+
     <button class="confirm-submit" {{on "click" this.submitConfirm}}>
       ok
     </button>

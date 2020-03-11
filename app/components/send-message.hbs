@@ -1,0 +1,6 @@
+<ButtonWithConfirmation
+  @text="Click to send your message."
+  @onConfirm={{fn this.sendMessage "info"}} as |confirmValue|
+>
+  <Input @value={{confirmValue}} />
+</ButtonWithConfirmation>

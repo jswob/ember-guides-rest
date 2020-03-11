@@ -13,7 +13,7 @@ export default class ButtonWithConfirmationComponent extends Component {
   @action
   async submitConfirm() {
     if (this.args.onConfirm) {
-      await this.args.onConfirm();
+      await this.args.onConfirm(this.confirmValue);
     }
 
     this.isConfirming = false;
